@@ -52,7 +52,6 @@ class Wp2static_Addon_GitLab {
             'ghPath',
             'ghToken',
             'ghRepo',
-            'ghCommitMessage',
         );
 
         $keys = array_merge(
@@ -69,7 +68,6 @@ class Wp2static_Addon_GitLab {
             'ghBranch',
             'ghPath',
             'ghRepo',
-            'ghCommitMessage',
         );
 
         $keys = array_merge(
@@ -87,7 +85,6 @@ class Wp2static_Addon_GitLab {
             'ghPath',
             'ghToken',
             'ghRepo',
-            'ghCommitMessage',
         );
 
         return $keys;

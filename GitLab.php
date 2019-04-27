@@ -7,11 +7,10 @@ class WP2Static_GitLab extends WP2Static_SitePublisher {
           'gitlab',
           array(
             'baseUrl-gitlab',
-            'ghBranch',
-            'ghCommitMessage',
-            'ghPath',
-            'ghRepo',
-            'ghToken',
+            'glBranch',
+            'glPath',
+            'glProject',
+            'glToken',
           ),
         );
 
