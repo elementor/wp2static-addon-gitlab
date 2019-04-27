@@ -48,10 +48,10 @@ class Wp2static_Addon_GitLab {
     public function add_deployment_option_keys( $keys ) {
         $new_keys = array(
             'baseUrl-gitlab',
-            'ghBranch',
-            'ghPath',
-            'ghToken',
-            'ghRepo',
+            'glBranch',
+            'glPath',
+            'glProject',
+            'glToken',
         );
 
         $keys = array_merge(
@@ -65,9 +65,9 @@ class Wp2static_Addon_GitLab {
     public function whitelist_deployment_option_keys( $keys ) {
         $whitelist_keys = array(
             'baseUrl-gitlab',
-            'ghBranch',
-            'ghPath',
-            'ghRepo',
+            'glBranch',
+            'glPath',
+            'glProject',
         );
 
         $keys = array_merge(
@@ -81,10 +81,10 @@ class Wp2static_Addon_GitLab {
     public function add_post_and_db_keys( $keys ) {
         $keys['gitlab'] = array(
             'baseUrl-gitlab',
-            'ghBranch',
-            'ghPath',
-            'ghToken',
-            'ghRepo',
+            'glBranch',
+            'glPath',
+            'glProject',
+            'glToken',
         );
 
         return $keys;

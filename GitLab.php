@@ -57,8 +57,6 @@ class WP2Static_GitLab extends WP2Static_SitePublisher {
             echo 'ERROR';
             die(); }
 
-        $this->initiateProgressIndicator();
-
         $batch_size = $this->settings['deployBatchSize'];
 
         if ( $batch_size > $this->files_remaining ) {
@@ -133,11 +131,6 @@ class WP2Static_GitLab extends WP2Static_SitePublisher {
                 $target_path,
                 $local_file_contents
             );
-
-            // NOTE: delay and progress askew in GitLab as we may
-            // upload all in one  request. Progress indicates building
-            // of list of files that will be deployed/checking if different
-            $this->updateProgress();
         }
 
         $this->pauseBetweenAPICalls();
